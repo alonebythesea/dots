@@ -1,7 +1,7 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME=""
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 plugins=(git)
 
@@ -17,7 +17,6 @@ fi
 
 #powerlevel
 
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
 POWERLEVEL9K_MODE=nerdfont-complete
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
