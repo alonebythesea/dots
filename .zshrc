@@ -1,7 +1,9 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME=""
+
+source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
 plugins=(git)
 
