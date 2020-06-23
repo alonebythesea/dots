@@ -334,18 +334,18 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
+    font xft:IBMPlexMono-Bold 10
 	strip_workspace_numbers yes
 
     colors {
-        background $base00
+        background #000000
         separator  $base01
         statusline #ffffff
 
 #           		  border  backgr. text
         focused_workspace   $base05 $base0D $base00
         active_workspace    $base05 $base03 $base00
-        inactive_workspace  $base03 $base01 #ffffff
+        inactive_workspace  $base03 #000000 #ffffff
         urgent_workspace    $base08 $base08 $base00
         binding_mode        $base00 $base0A $base00
 	}    
