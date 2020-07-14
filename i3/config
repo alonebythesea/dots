@@ -64,7 +64,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox-developer-edition
 bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F4 exec ranger
+bindsym $mod+F4 exec kitty -e 'ranger'
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -334,7 +334,7 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-    font xft:IBMPlexMono-Bold 10
+    font xft:IBMPlexMono-Bold 9
 	strip_workspace_numbers yes
 
     colors {
