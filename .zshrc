@@ -1,4 +1,4 @@
-
+DISABLE_AUTO_UPDATE="true"
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="jtriley"
@@ -7,6 +7,8 @@ ZSH_THEME="jtriley"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+alias vim="nvim"
+alias crysh="ssh root@crysh.xyz"
 
 #pyenv conf
 export PYENV_ROOT="$HOME/.pyenv"

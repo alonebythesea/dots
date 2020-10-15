@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "IBM Plex Sans";
+    font-family: "IBM Plex Sans", "Font Awesome 5 Free";
     font-size: 13px;
     min-height: 0;
 }
@@ -39,7 +39,7 @@ window#waybar {
     background-color: #64727D;
     border-bottom: 3px solid #ffffff;
 }
-
+#custom-weather,
 #clock,
 #battery,
 #cpu,
@@ -50,16 +50,12 @@ window#waybar {
 #pulseaudio,
 #custom-media,
 #tray,
-#mode,
-#idle_inhibitor,
-#mpd {
+#mode{
     padding: 0 3px;
     margin: 0 4px;
     color: #ffffff;
 }
 
-#clock {
-}
 
 #battery {
     color: #ffffff;
@@ -137,26 +133,3 @@ label:focus {
 #tray {
 }
 
-#idle_inhibitor {
-    background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-}
-
-#mpd {
-    color: #ffffff;
-}
-
-#mpd.disconnected {
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}

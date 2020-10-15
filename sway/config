@@ -18,7 +18,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Wallpaper:
-output * bg /usr/share/backgrounds/sway/firewatch.jpg fill
+output * bg /usr/share/backgrounds/sway/green.png fill
 #
 # Output:
 output eDP-1 resolution 1920x1080 position 1920,0
@@ -208,5 +208,5 @@ bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
 }
-
+exec redshift &
 include /etc/sway/config.d/*
