@@ -13,7 +13,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu dmenu_run -fn 'Lucida MAC'
 
 ### Output configuration
 #
@@ -208,5 +208,13 @@ bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
 }
-exec redshift &
+exec_always redshift
+exec_always mako
 include /etc/sway/config.d/*
+# Colors:
+
+#.class					border		back		text		indicator	child
+client.focused 				#151515a0 	#151515a0	#f5f5f5		#151515a0 	#db0000a0
+client.focused_inactive			#151515a0	#151515a0	#d0d0d0		#151515a0	#151515a0
+client.unfocused 			#15151580	#15151580	#d0d0d0		#15151580	#15151580
+client.urgent	 			#151515f0	#151515f0	#e1a3ee		#151515f0	#151515f0

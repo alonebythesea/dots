@@ -1,13 +1,17 @@
 DISABLE_AUTO_UPDATE="true"
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="jtriley"
+ZSH_THEME="spaceship"
 
 
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
+alias rm="rm -i"
+alias mv="mv -i"
+alias l="exa -l"
+alias ll="exa -la"
 alias crysh="ssh root@crysh.xyz"
 
 #pyenv conf
